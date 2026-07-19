@@ -28,6 +28,9 @@ swift build && .build/arm64-apple-macosx/debug/ClipB
 
 ---
 <img width="1516" height="908" alt="image" src="https://github.com/user-attachments/assets/854c39ea-cbf7-4b1e-99c7-933629a4a8af" />
+
+
+
 <img width="2204" height="1502" alt="image" src="https://github.com/user-attachments/assets/739d7a31-a0fd-4add-a76b-78f56c784886" />
 
 
