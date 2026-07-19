@@ -9,6 +9,14 @@ ClipB remembers everything you copy so you don't have to. It automatically organ
 
 ---
 
+## 📦 Easy Install (Recommended)
+The easiest way to install ClipB is to download the pre-packaged application:
+1. Go to the [Releases page](https://github.com/your-username/ClipB/releases) on GitHub.
+2. Download the latest `ClipB.dmg` file.
+3. Open the `.dmg` and drag **ClipB** into your Applications folder!
+---
+
+
 ## 🚀 Quick Start (Terminal Download)
 
 Want to try ClipB right now? Just open your **Terminal** app and run these three commands to download and launch the app immediately:
