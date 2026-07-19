@@ -11,10 +11,10 @@ ClipB remembers everything you copy so you don't have to. It automatically organ
 
 ## 📦 Easy Install (Recommended)
 The easiest way to install ClipB is to download the pre-packaged application:
-1. Go to the [Releases page](https://github.com/Ram-Dev-tech/ClipB/releases) on GitHub.
-2. Download the latest `ClipB.dmg` file.
-3. Double-click the `.dmg` file to open it.
-4. Drag the **ClipB** app icon into your Applications folder!
+1. Go to the [Releases page](https://github.com/Ram-Dev-tech/ClipB/Clip_B/dist) on GitHub.
+3. Download the latest `ClipB.dmg` file.
+4. Double-click the `.dmg` file to open it.
+5. Drag the **ClipB** app icon into your Applications folder!
 ---
 
 
