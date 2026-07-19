@@ -39,7 +39,7 @@ swift build && .build/arm64-apple-macosx/debug/ClipB
 <img width="1512" height="908" alt="image" src="https://github.com/user-attachments/assets/add479e6-dc52-40a4-9d2f-f6bcf1ccb396" />
 
 
-
+**ShortCut** to Open -->> `⌘ + ⇧ + Space`
 
 <img width="2204" height="1502" alt="image" src="https://github.com/user-attachments/assets/739d7a31-a0fd-4add-a76b-78f56c784886" />
 
