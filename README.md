@@ -11,7 +11,7 @@ ClipB remembers everything you copy so you don't have to. It automatically organ
 
 ## 📦 Easy Install (Recommended)
 The easiest way to install ClipB is to download the pre-packaged application:
-1. Go to the [Releases page](https://github.com/your-username/ClipB/releases) on GitHub.
+1. Go to the [Releases page](https://github.com/Ram-Dev-tech/ClipB/releases) on GitHub.
 2. Download the latest `ClipB.dmg` file.
 3. Open the `.dmg` and drag **ClipB** into your Applications folder!
 ---
@@ -23,7 +23,7 @@ Want to try ClipB right now? Just open your **Terminal** app and run these three
 
 ```bash
 # 1. Download the app from GitHub
-git clone https://github.com/your-username/ClipB.git
+git clone https://github.com/Ram-Dev-tech/ClipB.git
 
 # 2. Go into the folder
 cd ClipB
@@ -35,11 +35,11 @@ swift build && .build/arm64-apple-macosx/debug/ClipB
 *(Note: If you don't have Xcode Command Line Tools installed, your Mac will prompt you to install them first.)*
 
 ---
-<img width="1516" height="908" alt="image" src="https://github.com/user-attachments/assets/854c39ea-cbf7-4b1e-99c7-933629a4a8af" />
+<img width="1516" height="908" alt="image" src="https://github.com/Ram-Dev-tech/assets/854c39ea-cbf7-4b1e-99c7-933629a4a8af" />
 
 
 
-<img width="2204" height="1502" alt="image" src="https://github.com/user-attachments/assets/739d7a31-a0fd-4add-a76b-78f56c784886" />
+<img width="2204" height="1502" alt="image" src="https://github.com/Ram-Dev-tech/assets/739d7a31-a0fd-4add-a76b-78f56c784886" />
 
 
 
