@@ -27,6 +27,10 @@ swift build && .build/arm64-apple-macosx/debug/ClipB
 *(Note: If you don't have Xcode Command Line Tools installed, your Mac will prompt you to install them first.)*
 
 ---
+<img width="1516" height="908" alt="image" src="https://github.com/user-attachments/assets/854c39ea-cbf7-4b1e-99c7-933629a4a8af" />
+<img width="2204" height="1502" alt="image" src="https://github.com/user-attachments/assets/739d7a31-a0fd-4add-a76b-78f56c784886" />
+
+
 
 ## ✨ Features You'll Love
 
