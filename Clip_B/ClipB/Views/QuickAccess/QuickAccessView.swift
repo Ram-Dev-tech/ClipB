@@ -268,17 +268,19 @@ struct QuickAccessItemRow: View {
                         .frame(height: isLargeImageMode ? 150 : 32)
                         .cornerRadius(isLargeImageMode ? 8 : 4)
                         .padding(.vertical, isLargeImageMode ? 8 : 2)
-                } else if let text = entry.textContent {
-                    Text(text)
-                        .lineLimit(1)
-                        .font(.system(size: 14, weight: .semibold, design: .default))
-                        .foregroundColor(isSelected ? .white : .primary)
+                
                 } else {
-                    Text(entry.preview)
-                        .lineLimit(1)
-                        .font(.system(size: 14, weight: .semibold, design: .default))
-                        .foregroundColor(isSelected ? .white : .primary)
-                        .italic()
+                    if let attrString = try? AttributedString(markdown: entry.preview, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace)) {
+                        Text(attrString)
+                            .lineLimit(1)
+                            .font(.system(size: 14, weight: .semibold, design: .default))
+                            .foregroundColor(isSelected ? .white : .primary)
+                    } else {
+                        Text(entry.preview)
+                            .lineLimit(1)
+                            .font(.system(size: 14, weight: .semibold, design: .default))
+                            .foregroundColor(isSelected ? .white : .primary)
+                    }
                 }
                 
                 Text(entry.sourceApp ?? "Unknown App")
