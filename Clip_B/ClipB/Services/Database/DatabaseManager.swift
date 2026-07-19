@@ -144,7 +144,10 @@ final class DatabaseManager: Sendable {
                 let ftsPattern = FTS5Pattern(matchingAnyTokenIn: query)
                 if let pattern = ftsPattern {
                     var sql = """
-                        SELECT clipboardEntries.*
+                        SELECT clipboardEntries.id, clipboardEntries.timestamp, clipboardEntries.contentType, clipboardEntries.textContent, clipboardEntries.imageData, 
+                               snippet(clipboardEntries_fts, -1, '**', '**', '...', 64) as preview, 
+                               clipboardEntries.category, clipboardEntries.tags, clipboardEntries.aiSummary, clipboardEntries.isFavorite, clipboardEntries.isPinned, 
+                               clipboardEntries.isEncrypted, clipboardEntries.collectionId, clipboardEntries.sourceApp, clipboardEntries.embedding
                         FROM clipboardEntries
                         JOIN clipboardEntries_fts ON clipboardEntries_fts.rowid = clipboardEntries.rowid
                         WHERE clipboardEntries_fts MATCH ?
