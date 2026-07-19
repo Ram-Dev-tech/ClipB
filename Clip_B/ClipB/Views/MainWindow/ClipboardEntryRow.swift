@@ -35,10 +35,25 @@ struct ClipboardEntryRow: View {
                         .frame(height: 32)
                         .cornerRadius(4)
                 } else {
-                    Text(entry.preview)
-                        .font(.system(size: 13, weight: .medium))
-                        .foregroundColor(isSelected ? .white : .clipBTextPrimary)
-                        .lineLimit(2)
+                    if let data = entry.imageData, let nsImage = NSImage(data: data) {
+                    Image(nsImage: nsImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 32)
+                        .cornerRadius(4)
+                } else {
+                    if let attrString = try? AttributedString(markdown: entry.preview, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace)) {
+                        Text(attrString)
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundColor(isSelected ? .white : .clipBTextPrimary)
+                            .lineLimit(2)
+                    } else {
+                        Text(entry.preview)
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundColor(isSelected ? .white : .clipBTextPrimary)
+                            .lineLimit(2)
+                    }
+                }
                 }
                 
                 if let source = entry.sourceApp {
